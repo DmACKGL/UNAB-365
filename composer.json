@@ -1,5 +1,5 @@
 {
-    "name": "DmACKGL/UNAB-365",
+    "name": "dmackgl/unab-365",
     "description": "Microsoft Azure OAuth2 ('UNAB.CL') Provider for Laravel Socialite",
     "license": "MIT",
     "authors": [
