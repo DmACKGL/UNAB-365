@@ -1,7 +1,7 @@
 # UNAB 365
 
 ```bash
-composer require DmACKGL/UNAB-365
+composer require dmackgl/unab-365
 ```
 
 ## Installation & Basic Usage
