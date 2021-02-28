@@ -1,10 +1,10 @@
 <?php
 
-namespace SocialiteProviders\Azure;
+namespace DmACKGL\UNAB;
 
 use SocialiteProviders\Manager\SocialiteWasCalled;
 
-class AzureExtendSocialite
+class UNABExtendSocialite
 {
     /**
      * Register the provider.
@@ -13,6 +13,6 @@ class AzureExtendSocialite
      */
     public function handle(SocialiteWasCalled $socialiteWasCalled)
     {
-        $socialiteWasCalled->extendSocialite('azure', Provider::class);
+        $socialiteWasCalled->extendSocialite('unab', Provider::class);
     }
 }

@@ -1,11 +1,15 @@
 {
-    "name": "socialiteproviders/microsoft-azure",
-    "description": "Microsoft Azure OAuth2 Provider for Laravel Socialite",
+    "name": "DmACKGL/UNAB-365",
+    "description": "Microsoft Azure OAuth2 ('UNAB.CL') Provider for Laravel Socialite",
     "license": "MIT",
     "authors": [
         {
             "name": "Chris Hemmings",
             "email": "chris@hemmin.gs"
+        },
+        {
+            "name": "Franco Sanllehi",
+            "email": "f.sanllehiromero@uandresbello.edu"
         }
     ],
     "require": {
@@ -15,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "SocialiteProviders\\Azure\\": ""
+            "DmACKGL\\UNAB\\": ""
         }
     }
 }

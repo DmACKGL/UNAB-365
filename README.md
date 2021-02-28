@@ -1,7 +1,7 @@
-# Azure
+# UNAB 365
 
 ```bash
-composer require socialiteproviders/microsoft-azure
+composer require DmACKGL/UNAB-365
 ```
 
 ## Installation & Basic Usage
@@ -11,10 +11,10 @@ Please see the [Base Installation Guide](https://socialiteproviders.com/usage/),
 ### Add configuration to `config/services.php`
 
 ```php
-'azure' => [    
-  'client_id' => env('AZURE_CLIENT_ID'),  
-  'client_secret' => env('AZURE_CLIENT_SECRET'),  
-  'redirect' => env('AZURE_REDIRECT_URI') 
+'unab' => [    
+  'client_id' => env('UNAB_CLIENT_ID'),  
+  'client_secret' => env('UNAB_CLIENT_SECRET'),  
+  'redirect' => env('UNAB_REDIRECT_URI') 
 ],
 ```
 
@@ -28,7 +28,7 @@ Add the event to your `listen[]` array in `app/Providers/EventServiceProvider`. 
 protected $listen = [
     \SocialiteProviders\Manager\SocialiteWasCalled::class => [
         // ... other providers
-        'SocialiteProviders\\Azure\\AzureExtendSocialite@handle',
+        'DmACKGL\\UNAB-365\\UNABExtendSocialite@handle',
     ],
 ];
 ```
@@ -38,7 +38,7 @@ protected $listen = [
 You should now be able to use the provider like you would regularly use Socialite (assuming you have the facade installed):
 
 ```php
-return Socialite::driver('azure')->redirect();
+return Socialite::driver('unab')->redirect();
 ```
 
 ### Returned User fields
